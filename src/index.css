@@ -1,68 +1,59 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Orbitron:wght@400..900&display=swap');
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root{
+  --colorWhite: #f2f2f2;
+  --fontNunito: "Nunito Sans", sans-serif;
+  --fontOrbitron: "Orbitron", sans-serif ;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
 
-body {
+*{
+  padding: 0;
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  box-sizing: border-box;
+  font-family: var(--fontNunito);
+  color: var(--colorWhite);
+  letter-spacing: 1px;
+  text-decoration: none;
+  
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+#root{
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+
+body{
+  background-color: #0b0b0b;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+/* Estilo de la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 8px;  
 }
+
+/* Track (fondo) de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+  background: #dddddd; /* Color de fondo */
+}
+
+/* Handle (agarre) de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #352a3e, #5a1764); /* Degradado de tonos morados oscuros */
+  border-radius: 5px; /* Radio de borde del agarre */
+}
+
+/* Cambio de color al pasar el mouse sobre la barra de desplazamiento */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #602094, #5a1764); /* Degradado de tonos morados oscuros invertido */
+  
+}
+
+
+
