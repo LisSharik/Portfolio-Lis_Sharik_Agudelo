@@ -10,6 +10,7 @@ export function Contacts() {
             <p><i className='bx bxs-map'></i>Cl. 16 #55-129</p>
             <p><i className='bx bxs-phone'></i>+57 302 367 87 14</p>
             <p><i className='bx bxs-envelope' ></i>lissharik@gmail.com</p>
+            <p><i className='bx bxl-github'></i>LisSharik</p>
         </div>
       </div>
       <div className="map">

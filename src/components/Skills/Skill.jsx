@@ -12,7 +12,7 @@ export function Skills(){
                     <div className="skillsIcons">
                         <i className='bx bxl-javascript'></i>
                         <i className='bx bxl-java' ></i>
-                        <i className='bx bxl-postgresql' ></i>
+                        <i className='bx bxs-data'></i>
                         <i className='bx bxl-python' ></i>
                         <i className='bx bxl-react' ></i>
                     </div>
