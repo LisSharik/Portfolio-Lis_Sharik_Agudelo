@@ -4,20 +4,23 @@
         "name": "Movies Vite",
         "tecnology": ["HTML", "CSS", "JavaScript", "React", "Vite"],
         "url": "https://movies-project-vite.vercel.app",
-        "imgProject": "/img/imgProjects/porject_movies_vite.JPG"
+        "imgProject": "/img/imgProjects/porject_movies_vite.JPG",
+        "repository": "https://github.com/LisSharik/movies_project_vite"
     },
     {
         "id": 2,
         "name": "Project Hogwarts",
         "tecnology": ["HTML", "CSS","JavaScript"],
         "url": "https://hogwarts-project.vercel.app",
-        "imgProject": "/img/imgProjects/porject_hogwarts.JPG"
+        "imgProject": "/img/imgProjects/porject_hogwarts.JPG",
+        "repository": "https://github.com/LisSharik/Hogwarts-project"
     },
     {
         "id": 3,
         "name": "Christmas",
         "tecnology": ["HTML", "CSS","JavaScript"],
         "url": "https://christmas-tau-two.vercel.app",
-        "imgProject": "/img/imgProjects/porject_christmas.JPG"
+        "imgProject": "/img/imgProjects/porject_christmas.JPG",
+        "repository": "https://github.com/LisSharik/Christmas"
     }
 ]

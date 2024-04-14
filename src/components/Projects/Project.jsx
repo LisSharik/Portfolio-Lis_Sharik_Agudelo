@@ -13,6 +13,10 @@ export function Projects(props) {
     });
   }, [props.routeProject]);
 
+ projects.forEach(project =>{
+    console.log(project.repository);
+ })
+
   return (
     <section className="projects">
       <h2>Projects</h2>
@@ -32,6 +36,7 @@ export function Projects(props) {
                   </p>
                 ))}
               </div>
+              <a className="btn btn-repository" href={project.repository} target="_blank" ><i className='bx bxl-github'></i>{project.name} repository</a>
             </div>
           </div>
         ))}
