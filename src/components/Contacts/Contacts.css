@@ -1,6 +1,6 @@
 .contactsContent{
     width: 100%;
-    height: 50vh;
+    height: 75vh;
     background-color: rgba(0, 0, 0, 0.673);
     display: flex;
     justify-content: center;
@@ -14,35 +14,59 @@
 
 .infoContact{
     width: 40%;
-    height: 100%;
-
+    height: auto;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
     gap: 20px;
 }
-.contacts{
+form{
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
-    gap: 20px;
-    & p{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.field{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 45%;
+    & input{
+        height: 35px;
     }
-    & i{
-        font-size: 24px;
-      
+
+    & label{
+        font-weight: 700;
+    }
+}
+
+.sendInfo{
+    border: none;
+    border-radius: 10px;
+    background-color: #121212c7;
+    padding: 15px;
+}
+
+
+.message-area{
+    width: 94%;
+    resize: none;
+    & textarea{
+        height: 150px;
+        resize: none;
+
     }
 }
 
 .map{
     width: 40%;
-    height: 100%;
+    height: 80%;
 }
 
 .map iframe{
@@ -52,7 +76,7 @@
 
 @media (max-width: 768px){
     .contactsContent{
-        height: 80vh;
+        height: auto;
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -62,4 +86,12 @@
     .infoContact, .map{
         width: 85%;
     }
+    .map{
+       
+        height: 50vh;
+        & iframe{
+            width: 95%;
+        }
+    }
+    
 }

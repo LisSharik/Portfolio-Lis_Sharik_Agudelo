@@ -26,7 +26,7 @@
     {
         "id": 4,
         "name": "SpaceX",
-        "tecnology": ["HTML", "CSS","JavaScript"],
+        "tecnology": ["HTML", "CSS","JavaScript","Boostrap"],
         "url": "https://spacex-six.vercel.app",
         "imgProject": "/img/imgProjects/porject_sapce_x.JPG",
         "repository": "https://github.com/LisSharik/Spacex"
@@ -34,7 +34,7 @@
     {
         "id": 5,
         "name": "Inventary",
-        "tecnology": ["HTML", "CSS","JavaScript"],
+        "tecnology": ["HTML", "CSS","JavaScript","Boostrap"],
         "url": "https://inventary-boostrap.vercel.app",
         "imgProject": "/img/imgProjects/porject_inventary.JPG",
         "repository": "https://github.com/LisSharik/Inventary-Boostrap"
