@@ -1,7 +1,13 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./Contacts.css";
 
 export function Contacts() {
+  const [formData, setFormData] = useState({
+    from_name: "",
+    email_id: "",
+    message: ""
+  });
+
   useEffect(() => {
     const btn = document.getElementById("button");
 
@@ -16,6 +22,12 @@ export function Contacts() {
       emailjs.sendForm(serviceID, templateID, event.target).then(
         () => {
           btn.value = "Send Email";
+          // Limpiar los campos del formulario después de enviarlo
+          setFormData({
+            from_name: "",
+            email_id: "",
+            message: ""
+          });
         },
         (err) => {
           btn.value = "Send Email";
@@ -32,6 +44,13 @@ export function Contacts() {
     };
   }, []);
 
+  const handleInputChange = (event) => {
+    setFormData({
+      ...formData,
+      [event.target.name]: event.target.value
+    });
+  };
+
   return (
     <section className="contactsContent" id="contactsContent">
       <div className="infoContact">
@@ -46,6 +65,8 @@ export function Contacts() {
               id="from_name"
               className="sendInfo"
               placeholder="Enter your name"
+              value={formData.from_name}
+              onChange={handleInputChange}
             />
           </div>
 
@@ -57,6 +78,8 @@ export function Contacts() {
               id="email_id"
               placeholder="Enter your email"
               className="sendInfo"
+              value={formData.email_id}
+              onChange={handleInputChange}
             />
           </div>
 
@@ -67,6 +90,8 @@ export function Contacts() {
               id="message"
               className="sendInfo"
               placeholder="Enter your message"
+              value={formData.message}
+              onChange={handleInputChange}
             ></textarea>
           </div>
 

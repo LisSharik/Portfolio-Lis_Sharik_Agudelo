@@ -38,7 +38,7 @@ form{
     gap: 10px;
     width: 45%;
     & input{
-        height: 35px;
+        height: 40px;
     }
 
     & label{
@@ -86,6 +86,12 @@ form{
     .infoContact, .map{
         width: 85%;
     }
+    .field{
+        width: 100%;
+        
+    }
+
+
     .map{
        
         height: 50vh;
